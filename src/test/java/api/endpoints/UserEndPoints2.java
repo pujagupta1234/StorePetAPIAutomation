@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 import api.payload.User;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
+//
 public class UserEndPoints2 {
 	
 	public static ResourceBundle getURL()

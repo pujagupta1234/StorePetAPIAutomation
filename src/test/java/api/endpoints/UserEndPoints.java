@@ -7,7 +7,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 //Created for perform Create, Read, Update and Delete requests to the user API 
-
+//
 public class UserEndPoints {
 
 	public static Response createUser(User payload)
