@@ -4,6 +4,54 @@
   <artifactId>PetStoreAPIAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  
+  <profiles>
+		<profile>
+			<id>Regression</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.2.5</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>DatadrivenTest.xml</suiteXmlFile>
+								</suiteXmlFiles>
+								<!-- put your configurations here -->
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+ 
+		<profile>
+			<id>APITest</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.2.5</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testng.xml</suiteXmlFile>
+								</suiteXmlFiles>
+								<!-- put your configurations here -->
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		</profiles>
+  
+  
+  
+  
   <build>
   <pluginManagement>
   
